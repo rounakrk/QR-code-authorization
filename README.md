@@ -36,4 +36,4 @@ from cryptography.fernet import Fernet #here I am using Fernet for encrytion and
 * PASSKEY
 
 I will be attaching all the links for sources and materials to know about these packages and library as I will progressed.<br>
-For any queries reach out to me in [Linkedin](https://www.linkedin.com/in/rounakrk/)
+For any queries reach out to me in [Linkedin](https://www.linkedin.com/in/rounakrk/)<br>

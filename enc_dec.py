@@ -1,29 +1,31 @@
-from cryptography.fernet import Fernet 
-  
+from cryptography.fernet import Fernet
+
+
 def encrypt_pass(password_msg):
     # we will be encryting the below string. 
     message = password_msg
-    
+
     # generate a key for encryptio and decryption 
     # You can use fernet to generate  
     # the key or use random key generator 
     # here I'm using fernet to generate key 
-    
-    key = Fernet.generate_key() 
-    
+
+    key = Fernet.generate_key()
+
     # Instance the Fernet class with the key 
-    
-    fernet = Fernet(key) 
-    
+
+    fernet = Fernet(key)
+
     # then use the Fernet class instance  
     # to encrypt the string string must must  
     # be encoded to byte string before encryption 
-    encMessage = fernet.encrypt(message.encode()) 
-  
+    encMessage = fernet.encrypt(message.encode())
+
     # print("original string: ", message) 
     # print("encrypted string: ", encMessage) 
 
     return encMessage.decode('utf-8'), key.decode('utf-8')
+
 
 def decrpyt_pass(key, password_msg):
     key = bytes(key, 'utf-8')
@@ -41,8 +43,8 @@ def decrpyt_pass(key, password_msg):
 # print("Btye to string: ",encMessage.decode('utf-8'))
 # rt = encMessage.decode('utf-8')
 # print("String to byte", bytes(rt, 'utf-8'))
- 
-  
+
+
 # print("decrypted string: ", decMessage)
 
 # enc, key = encrypt_pass("Rounak Agarwal")

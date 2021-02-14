@@ -9,6 +9,8 @@ def qrcode_generation(data, img_name):
 
     img.save(path)
 
+    print("Image saved in .... \nPath : ", path)
 
-if __name__ == "__main__":
-    qrcode_generation("Rounak Agarwal", "rk")
+
+# if __name__ == "__main__":
+#     qrcode_generation("Rounak Agarwal", "rk")
