@@ -2,7 +2,7 @@ from cryptography.fernet import Fernet
 
 
 def encrypt_pass(password_msg):
-    # we will be encryting the below string. 
+    # we will be encryting the below string
     message = password_msg
 
     # generate a key for encryptio and decryption 
